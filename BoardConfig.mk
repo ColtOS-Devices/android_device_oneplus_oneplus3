@@ -21,9 +21,6 @@
 # definition file).
 #
 
-# Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
-
 PLATFORM_PATH := device/oneplus/oneplus3
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
@@ -66,7 +63,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8996
-TARGET_KERNEL_CONFIG := lineageos_oneplus3_defconfig
+TARGET_KERNEL_CONFIG := colt_oneplus3_defconfig
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -155,6 +152,9 @@ endif
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
+# Gestures
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
+
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
@@ -194,8 +194,8 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_USES_MKE2FS := true
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # RIL
 TARGET_RIL_VARIANT := caf
