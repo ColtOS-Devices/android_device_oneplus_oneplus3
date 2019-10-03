@@ -76,7 +76,8 @@
             android:summary="@string/dci_mode_summary"
             android:title="@string/dci_mode_title" />
     </PreferenceCategory>
-    <PreferenceCategory
+
+<!--    <PreferenceCategory
         android:key="display"
         android:title="@string/display_title">
         <Preference
@@ -87,5 +88,5 @@
                  android:targetPackage="org.lineageos.settings.doze"
                  android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"/>
         </Preference>
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 </PreferenceScreen>
