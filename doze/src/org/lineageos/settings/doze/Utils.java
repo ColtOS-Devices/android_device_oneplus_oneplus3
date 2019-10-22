@@ -19,13 +19,17 @@ package org.lineageos.settings.doze;
 
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.display.AmbientDisplayConfiguration;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.UserHandle;
-import android.support.v7.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
 
+import java.util.List;
+
+import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 
 public final class Utils {
