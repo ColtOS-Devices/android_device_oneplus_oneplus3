@@ -39,3 +39,6 @@ BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3:8.0.0/OPR1.170623.032/02281230:u
 TARGET_VENDOR := oneplus
 
 COLT_BUILD_TYPE := Official
+
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2019-10-01
