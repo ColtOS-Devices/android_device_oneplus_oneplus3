@@ -1,3 +1,6 @@
 type debugfs_rmt_storage, debugfs_type, fs_type;
 type sysfs_fpc, sysfs_type, fs_type;
 type proc_touchpanel, fs_type, proc_type;
+
+# DT2W
+type proc_dt2w, proc_type, fs_type;
