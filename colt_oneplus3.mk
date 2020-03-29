@@ -42,3 +42,7 @@ COLT_BUILD_TYPE := Official
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.colt.maintainer=Rakesh♥Batra
