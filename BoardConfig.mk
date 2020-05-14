@@ -30,6 +30,8 @@ BOARD_VENDOR := oneplus
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := OnePlus3,oneplus3,OnePlus3T,oneplus3t
 
+TARGET_USES_PIXEL_CHARGER := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8996
 TARGET_NO_BOOTLOADER := true

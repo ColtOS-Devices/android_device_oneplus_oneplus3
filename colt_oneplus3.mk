@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
 # Inherit some common ColtOS stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080x1920
@@ -44,5 +44,4 @@ COLT_BUILD_TYPE := Official
 VENDOR_SECURITY_PATCH := 2019-10-01
 
 # Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.colt.maintainer=Rakesh♥Batra
+COLT_DEVICE_MAINTAINER := RakeshBatra
