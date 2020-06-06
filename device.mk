@@ -37,6 +37,17 @@ PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus3 \
     vendor/nxp/opensource/pn5xx
 
+# Google Camera
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/urnyx05-gcam-op3.xml:$(TARGET_COPY_OUT_DATA)/media/0/Gcam/Configs7/urnyx05-gcam-op3.xml \
+    $(LOCAL_PATH)/configs/camera/urnyx-gcam-op3.xml:$(TARGET_COPY_OUT_DATA)/media/0/Gcam/Configs7/urnyx-gcam-op3.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/urnyx05-gcam-op3.xml:storage/emulated/0/Gcam/Configs7/urnyx05-gcam-op3.xml \
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
