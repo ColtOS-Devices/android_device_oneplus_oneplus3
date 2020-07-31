@@ -7,3 +7,6 @@ type proc_dt2w, proc_type, fs_type;
 
 # FPS
 type sysfs_fps, sysfs_type, fs_type;
+
+#HBM
+type sysfs_hbm, sysfs_type, fs_type;
