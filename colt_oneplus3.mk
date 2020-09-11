@@ -38,7 +38,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 TARGET_VENDOR := oneplus
 
 BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3:9/PKQ1.181203.001/1907311932:user/release-keys"
-COLT_BUILD_TYPE := OFFICIAL
+COLT_BUILD_TYPE := Official
 
 # Maintainer
 COLT_DEVICE_MAINTAINER := RakeshBatra
